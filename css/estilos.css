@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after{
+  content: '';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: verdana, geneva, serif;
+}
+header{
+  padding: 20px 0;
+}
+div.contenedor {
+  width: 1200px;
+  margin: 0 auto;
+}
+/**Navegacionn**/
+.navegacion {
+  background-color: #db008e;
+}
+nav{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+}
+nav > ul > li {
+  float: left;
+}
+nav ul li a {
+  display: inline-block;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px
+}
+nav ul li a:hover {
+  background-color: #00b8e4;
+}
+/*segundo nivel*/
+nav ul ul{
+  position: absolute;
+  background-color: rgba(0, 184, 228, 0.7);
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li:hover{
+  background-color: rgba(0, 184, 228, 1);
+}
+/*Contenido principal*/
+div.contenido{
+
+}
+main{
+  width: 70%;
+  float: left;
+  padding-right: 30px;
+}
+aside{
+  margin-top: 20px;
+  width: 30%;
+  float: right;
+  color: rgba(0, 184, 228, 1);
+}
+aside ol li {
+  list-style: none;
+  padding: 10px;
+
+}
+aside ol li a {
+  color: rgba(0, 184, 228, 1);
+
+}
+aside ol li:hover{
+  background-color: rgba(0, 184, 228, 1);
+
+  cursor: pointer;
+}
+aside ol li:hover a{
+  color: white;
+}
+/*entrada de post*/
+article img{
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+article{
+  margin-top: 30px;
+}
+h2{
+  color: rgba(0, 184, 228, 1);
+  margin-bottom: 20px
+
+}
+p{
+  line-height: 2;
+  font-size: 14px;
+}
+.boton{
+  text-decoration: none;
+  background-color: rgba(219, 0, 141, 0.8);
+  padding: 10px 30px;
+  margin: 20px 0;
+  display: inline-block;
+  color: white;
+}
+/*footer*/
+footer{
+  background-color: #db008e;
+  padding-top: 30px;
+  margin-top: 30px;
+
+}
+footer h2 {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+}
+footer div.nosotros{
+  float: left;
+  width: 30%;
+  color: white;
+  font-size: 10px;
+
+}
+footer div.nosotros h2{
+  text-align: left;
+}
+footer div.menu{
+  float: right;
+  width: 40%;
+}
+footer div.menu nav{
+  width: auto;
+}
+footer nav ul li a{
+  width: auto;
+}
+p.copyright {
+  text-align: center;
+  color: white;
+}
